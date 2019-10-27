@@ -16,6 +16,7 @@
 		0839421E2366050400070580 /* m2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0839421C2366050400070580 /* m2.mp3 */; };
 		0839421F2366050400070580 /* m1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0839421D2366050400070580 /* m1.mp3 */; };
 		083942212366079F00070580 /* AKPlayerProblem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 083942202366079E00070580 /* AKPlayerProblem2.png */; };
+		0839422323660A1900070580 /* AKPlayerProblem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0839422223660A1900070580 /* AKPlayerProblem1.png */; };
 		0DEEDEEBE478CDCBE88878F1 /* Pods_AKPlayerProblems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E369F2A566C37AB729D18ACC /* Pods_AKPlayerProblems.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		0839421C2366050400070580 /* m2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m2.mp3; sourceTree = "<group>"; };
 		0839421D2366050400070580 /* m1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m1.mp3; sourceTree = "<group>"; };
 		083942202366079E00070580 /* AKPlayerProblem2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AKPlayerProblem2.png; sourceTree = "<group>"; };
+		0839422223660A1900070580 /* AKPlayerProblem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AKPlayerProblem1.png; sourceTree = "<group>"; };
 		738751C36CDD5E3BB7E3089F /* Pods-AKPlayerProblems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerProblems.debug.xcconfig"; path = "Target Support Files/Pods-AKPlayerProblems/Pods-AKPlayerProblems.debug.xcconfig"; sourceTree = "<group>"; };
 		7795FF50E35D4689B2D8FDDC /* Pods-AKPlayerProblems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerProblems.release.xcconfig"; path = "Target Support Files/Pods-AKPlayerProblems/Pods-AKPlayerProblems.release.xcconfig"; sourceTree = "<group>"; };
 		E369F2A566C37AB729D18ACC /* Pods_AKPlayerProblems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKPlayerProblems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		083941EF2365E90800070580 /* AKPlayerProblems */ = {
 			isa = PBXGroup;
 			children = (
+				0839422223660A1900070580 /* AKPlayerProblem1.png */,
 				083942202366079E00070580 /* AKPlayerProblem2.png */,
 				0839421D2366050400070580 /* m1.mp3 */,
 				0839421C2366050400070580 /* m2.mp3 */,
@@ -161,6 +164,7 @@
 			files = (
 				0839421F2366050400070580 /* m1.mp3 in Resources */,
 				083941FD2365E90A00070580 /* LaunchScreen.storyboard in Resources */,
+				0839422323660A1900070580 /* AKPlayerProblem1.png in Resources */,
 				083942212366079F00070580 /* AKPlayerProblem2.png in Resources */,
 				083941FA2365E90A00070580 /* Assets.xcassets in Resources */,
 				083941F82365E90800070580 /* Main.storyboard in Resources */,
