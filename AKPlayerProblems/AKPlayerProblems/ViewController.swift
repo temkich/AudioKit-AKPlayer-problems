@@ -13,10 +13,11 @@ import AudioKit
 class ViewController: UIViewController {
     
     var mixer = AKMixer()
+    var player1mp3 = AKPlayer()
+    var player2mp3 = AKPlayer()
     
     var player1 = AKPlayer()
     var player2 = AKPlayer()
-    
     var views = [UIView]()
 
     override func viewDidLoad() {
@@ -24,11 +25,20 @@ class ViewController: UIViewController {
             
         AKSettings.enableLogging = true
         
-        guard let clickOne = Bundle.main.url(forResource: "m1", withExtension: "mp3"),
-        let clickTwo = Bundle.main.url(forResource: "m2", withExtension: "mp3")
+        guard let clickOneMp3 = Bundle.main.url(forResource: "m1MP3", withExtension: "mp3"),
+        let clickTwoMp3 = Bundle.main.url(forResource: "m2MP3", withExtension: "mp3")
         else {
                 fatalError()
         }
+        
+        guard let clickOne = Bundle.main.url(forResource: "m1", withExtension: "wav"),
+        let clickTwo = Bundle.main.url(forResource: "m2", withExtension: "wav")
+        else {
+                fatalError()
+        }
+        
+        player1mp3 >>> mixer
+        player2mp3 >>> mixer
             
         player1 >>> mixer
         player2 >>> mixer
@@ -39,8 +49,17 @@ class ViewController: UIViewController {
         player2.isLooping = true
         player2.buffering = .always
         
+        player1mp3.isLooping = true
+        player1mp3.buffering = .always
+        
+        player2mp3.isLooping = true
+        player2mp3.buffering = .always
+        
         AudioKit.output = mixer
         do {
+            try player1mp3.load(url: clickOneMp3)
+            try player2mp3.load(url: clickTwoMp3)
+            
             try player1.load(url: clickOne)
             try player2.load(url: clickTwo)
             
@@ -50,6 +69,9 @@ class ViewController: UIViewController {
         }
         setUpUI()
         
+        player1mp3.prepare()
+        player2mp3.prepare()
+        
         player1.prepare()
         player2.prepare()
     }
@@ -57,11 +79,18 @@ class ViewController: UIViewController {
     func setUpUI() {
         func startActionProblem1() ->(AKButton) -> Void {
             return { button in
+                
+                if self.player1mp3.isPlaying {
+                    self.player1mp3.stop()
+                    self.player2mp3.stop()
+                } else {
+                    let now = AVAudioTime.now() + 0.25
+                    
+                    self.player1mp3.play(at: now)
+                    self.player2mp3.play(at: now)
+                }
             
-            let now = AVAudioTime.now()
             
-            self.player1.play(at: now)
-            self.player2.play(at: now)
             
             }
         }
@@ -69,17 +98,22 @@ class ViewController: UIViewController {
         func startActionProblem2() ->(AKButton) -> Void {
             return { button in
             
-            let now = AVAudioTime.now() + 0.25
-            
-            self.player1.play(at: now)
-            self.player2.play(at: now)
+            if self.player1.isPlaying {
+                self.player1.stop()
+                self.player2.stop()
+            } else {
+                let now = AVAudioTime.now() + 0.25
+                
+                self.player1.play(at: now)
+                self.player2.play(at: now)
+            }
             }
         }
         
-        addView(AKButton(title: "Problem1",
+        addView(AKButton(title: "play mp3",
                          callback: startActionProblem1()))
 
-        addView(AKButton(title: "Problem2",
+        addView(AKButton(title: "play wav",
                          callback: startActionProblem2()))
     }
     

@@ -13,10 +13,12 @@
 		083941F82365E90800070580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083941F62365E90800070580 /* Main.storyboard */; };
 		083941FA2365E90A00070580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083941F92365E90A00070580 /* Assets.xcassets */; };
 		083941FD2365E90A00070580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083941FB2365E90A00070580 /* LaunchScreen.storyboard */; };
-		0839421E2366050400070580 /* m2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0839421C2366050400070580 /* m2.mp3 */; };
-		0839421F2366050400070580 /* m1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0839421D2366050400070580 /* m1.mp3 */; };
 		083942212366079F00070580 /* AKPlayerProblem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 083942202366079E00070580 /* AKPlayerProblem2.png */; };
 		0839422323660A1900070580 /* AKPlayerProblem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0839422223660A1900070580 /* AKPlayerProblem1.png */; };
+		0839423F2368635200070580 /* m2MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0839423B2368635100070580 /* m2MP3.mp3 */; };
+		083942412368635200070580 /* m1MP3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0839423D2368635200070580 /* m1MP3.mp3 */; };
+		083942442368639700070580 /* m2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 083942422368639600070580 /* m2.wav */; };
+		083942452368639700070580 /* m1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 083942432368639600070580 /* m1.wav */; };
 		0DEEDEEBE478CDCBE88878F1 /* Pods_AKPlayerProblems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E369F2A566C37AB729D18ACC /* Pods_AKPlayerProblems.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +31,12 @@
 		083941F92365E90A00070580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		083941FC2365E90A00070580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		083941FE2365E90A00070580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0839421C2366050400070580 /* m2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m2.mp3; sourceTree = "<group>"; };
-		0839421D2366050400070580 /* m1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m1.mp3; sourceTree = "<group>"; };
 		083942202366079E00070580 /* AKPlayerProblem2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AKPlayerProblem2.png; sourceTree = "<group>"; };
 		0839422223660A1900070580 /* AKPlayerProblem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AKPlayerProblem1.png; sourceTree = "<group>"; };
+		0839423B2368635100070580 /* m2MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m2MP3.mp3; sourceTree = "<group>"; };
+		0839423D2368635200070580 /* m1MP3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m1MP3.mp3; sourceTree = "<group>"; };
+		083942422368639600070580 /* m2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m2.wav; sourceTree = "<group>"; };
+		083942432368639600070580 /* m1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m1.wav; sourceTree = "<group>"; };
 		738751C36CDD5E3BB7E3089F /* Pods-AKPlayerProblems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerProblems.debug.xcconfig"; path = "Target Support Files/Pods-AKPlayerProblems/Pods-AKPlayerProblems.debug.xcconfig"; sourceTree = "<group>"; };
 		7795FF50E35D4689B2D8FDDC /* Pods-AKPlayerProblems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKPlayerProblems.release.xcconfig"; path = "Target Support Files/Pods-AKPlayerProblems/Pods-AKPlayerProblems.release.xcconfig"; sourceTree = "<group>"; };
 		E369F2A566C37AB729D18ACC /* Pods_AKPlayerProblems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKPlayerProblems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,10 +75,12 @@
 		083941EF2365E90800070580 /* AKPlayerProblems */ = {
 			isa = PBXGroup;
 			children = (
+				083942432368639600070580 /* m1.wav */,
+				083942422368639600070580 /* m2.wav */,
+				0839423D2368635200070580 /* m1MP3.mp3 */,
+				0839423B2368635100070580 /* m2MP3.mp3 */,
 				0839422223660A1900070580 /* AKPlayerProblem1.png */,
 				083942202366079E00070580 /* AKPlayerProblem2.png */,
-				0839421D2366050400070580 /* m1.mp3 */,
-				0839421C2366050400070580 /* m2.mp3 */,
 				083941F02365E90800070580 /* AppDelegate.swift */,
 				083941F22365E90800070580 /* SceneDelegate.swift */,
 				083941F42365E90800070580 /* ViewController.swift */,
@@ -162,13 +168,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0839421F2366050400070580 /* m1.mp3 in Resources */,
 				083941FD2365E90A00070580 /* LaunchScreen.storyboard in Resources */,
 				0839422323660A1900070580 /* AKPlayerProblem1.png in Resources */,
 				083942212366079F00070580 /* AKPlayerProblem2.png in Resources */,
 				083941FA2365E90A00070580 /* Assets.xcassets in Resources */,
+				083942442368639700070580 /* m2.wav in Resources */,
 				083941F82365E90800070580 /* Main.storyboard in Resources */,
-				0839421E2366050400070580 /* m2.mp3 in Resources */,
+				083942452368639700070580 /* m1.wav in Resources */,
+				083942412368635200070580 /* m1MP3.mp3 in Resources */,
+				0839423F2368635200070580 /* m2MP3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
